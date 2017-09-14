@@ -110,7 +110,7 @@
                 let food = 0;
                 for(let i = 0; i < this.passengerArray.length; i++){//go through each person in the wagon
                     food = food + this.passengerArray[i].food; //add individual amount to current wagon total
-                    console.log("current wagon food amount: " + food)
+                    //console.log("current wagon food amount: " + food)
                 }
                 return food;//Return the total amount of food among all passengers of the wagon.
             }
@@ -135,12 +135,12 @@
         // Create wagon with an empty passenger list and a capacity of 4.
         let spiceWagon = new Wagon();
         // Make 3 of 5 the travelers eat by calling their eat methods
-        babySpice.eat();
-        sportySpice.eat();
-        gingerSpice.eat();
+        console.log(babySpice.eat());
+        console.log(sportySpice.eat());
+        console.log(gingerSpice.eat());
         // Make the remaining 2 travelers hunt
-        poshSpice.hunt();
-        scarySpice.hunt();
+        console.log(poshSpice.hunt());
+        console.log(scarySpice.hunt());
         // Create an array of your travelers, 
         let added = 0;
         let queue = [poshSpice, babySpice, sportySpice, gingerSpice, scarySpice];

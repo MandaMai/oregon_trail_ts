@@ -106,12 +106,12 @@
     // Create wagon with an empty passenger list and a capacity of 4.
     var spiceWagon = new Wagon();
     // Make 3 of 5 the travelers eat by calling their eat methods
-    babySpice.eat();
-    sportySpice.eat();
-    gingerSpice.eat();
+    console.log(babySpice.eat());
+    console.log(sportySpice.eat());
+    console.log(gingerSpice.eat());
     // Make the remaining 2 travelers hunt
-    poshSpice.hunt();
-    scarySpice.hunt();
+    console.log(poshSpice.hunt());
+    console.log(scarySpice.hunt());
     // Create an array of your travelers, 
     var added = 0;
     var queue = [poshSpice, babySpice, sportySpice, gingerSpice, scarySpice];
